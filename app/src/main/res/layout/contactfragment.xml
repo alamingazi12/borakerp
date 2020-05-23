@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <TextView
+             android:layout_marginTop="70dp"
+            android:textAlignment="center"
+             android:padding="4dp"
+             android:textColor="#000"
+             android:textStyle="bold"
+             android:textSize="20dp"
+             android:text="Borak Technologies Ltd"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+         <LinearLayout
+             android:layout_marginTop="60dp"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:layout_marginTop="10dp"
+                 android:text="Head Office:"
+                 android:layout_margin="10dp"
+                 android:textSize="18dp"
+                 android:textColor="#000"
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+             <TextView
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:text="5th Floor,Khulna Chember of \n Commerce  Buiddings,Dakbanglo \n Mor,khulna-9100"
+                 android:layout_marginBottom="5dp"
+                 android:textSize="18dp"
+                 android:textColor="#000"
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:layout_marginTop="100dp"
+                 android:text="Project Office:"
+                 android:layout_margin="10dp"
+                 android:textSize="18dp"
+                 android:textColor="#000"
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+             <TextView
+                 android:layout_marginRight="10dp"
+                 android:layout_marginLeft="10dp"
+
+                 android:text="1sh Floor,Mortaza Mansion \n Upper Jessore Road \n Daulatpur khulna-9202"
+
+                 android:textSize="18dp"
+                 android:textColor="#000"
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+             <TextView
+
+                 android:text="Mobile: 01730030600"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="4dp"
+                 android:textSize="18dp"
+                 android:textColor="#000"
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+             <TextView
+                 android:layout_marginTop="4dp"
+                 android:text="Phone:  041-733669"
+                 android:layout_margin="10dp"
+                 android:textSize="18dp"
+                 android:textColor="#000"
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+             <TextView
+
+                 android:text="Email:   borakinfo@gmail.com"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:textSize="18dp"
+                 android:textColor="#000"
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+             <TextView
+                 android:layout_marginRight="10dp"
+                 android:layout_marginLeft="10dp"
+                 android:text="Website:www.boraksoftware.com"
+
+                 android:textSize="18dp"
+                 android:textColor="#000"
+
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"/>
+
+
+
+
+
+         </LinearLayout>
+     </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

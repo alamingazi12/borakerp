@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="1"
+        android:collapseColumns="2"
+        android:stretchColumns="2">
+
+
+
+    <TableRow
+
+        android:layout_height="wrap_content"
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:background="@drawable/itemstyle"
+            android:id="@+id/textView2"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Day High"
+            android:textStyle="bold"/>
+        <TextView
+            android:paddingLeft="4dp"
+            android:background="@drawable/itemstyle"
+            android:layout_weight="2"
+            android:id="@+id/textView3"
+            android:text="textView3"
+            android:gravity="left"/>
+        <TextView
+            android:layout_weight="1"
+            android:text="26°F"
+
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:background="@drawable/itemstyle"
+            android:layout_weight="1"
+            android:text="26°F"
+            android:id="@+id/textView4"
+            android:gravity="center_horizontal"/>
+
+
+    </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
