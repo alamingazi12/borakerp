@@ -15,7 +15,7 @@ public class ApiClient {
    public static Retrofit retrofit;
     public static Retrofit getApiClient(Context context){
 
-        int cacheSize = 10 * 1024 * 1024; // 10 MB
+        int cacheSize = 5 * 1024 * 1024; // 10 MB
 
         okhttp3.Cache cache=new okhttp3.Cache(context.getCacheDir(),cacheSize);
 

@@ -68,7 +68,7 @@ public class FragmentInfo  extends Fragment  {
 
 
 
-   ArrayList<Transaction> transactionslist;
+   ArrayList<Transaction> transactionslist=null;
 
 
     public static ArrayList<String> projects=new ArrayList<>();
@@ -258,7 +258,7 @@ public class FragmentInfo  extends Fragment  {
 
     private void findTransaction() {
         if(transactionslist!=null){
-            transactionslist.clear();
+            transactionslist=null;
         }
          String cid=MainActivity.cid;
          final String tdate=textdate.getText().toString();
@@ -460,7 +460,14 @@ public class FragmentInfo  extends Fragment  {
 
 
     private ArrayList<GroupTransaction> getAllgroups(ArrayList<Transaction> transactions) {
+
+        // Toast.makeText(getActivity(),"grups size"+groups.size(),Toast.LENGTH_LONG).show();
+        if(groups.size()>0){
+            groups.clear();
+        }
          if(groups.size()>0 && boolean_folder==true){
+             Log.d("size",String.valueOf(groups.size()));
+             Toast.makeText(getActivity(),"this is not null",Toast.LENGTH_LONG).show();
              groups.clear();
              boolean_folder=false;
          }
@@ -483,9 +490,12 @@ public class FragmentInfo  extends Fragment  {
                 groups.get(position).setItems(al_path);
             } else {
                 ArrayList<GroupItem> al_path2 = new ArrayList<>();
+                /*
                 if(al_path2.size()>0){
                     al_path2.clear();
                 }
+
+                 */
                 al_path2.add(new GroupItem(transaction.gettNm(),transaction.getAmount(),transaction.getAmount1(),transaction.getAmount2(),transaction.getAmount3(),transaction.getAmount4(),transaction.getSlno(),transaction.getNote1(),transaction.getNote2()));
                 GroupTransaction group = new GroupTransaction();
                 group.setDate(transaction.getTdate());
